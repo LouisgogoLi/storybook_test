@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import "./ListItem.css";
 import { reactive } from "vue";
 export default {
   props: {
@@ -31,3 +30,26 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.box {
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: snow;
+  transition: height 0.4s;
+}
+.box.open {
+  height: 200px;
+}
+.box > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #d2d2d2;
+  font-size: 12px;
+  color: darkslategray;
+}
+</style>
