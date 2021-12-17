@@ -2,6 +2,7 @@
 node_modules
 /dist
 /jsconfig.json
+/storybook-static
 
 # local env files
 .env.local

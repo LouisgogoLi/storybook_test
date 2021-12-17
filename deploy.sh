@@ -139,7 +139,7 @@ echo ${osStatus} " ＊如要停止動作請按下 CRTL + C or Control + C"
 echo ${osStatus} "==============================================================${norm}"
 
 sleep 5s
-npm run build
+npm run build-storybook
 
 echo
 echo ${osStatus} "${lgreen}=============================================================="
@@ -151,7 +151,7 @@ echo ${osStatus} "${yellow}=====================================================
 echo ${osStatus} " 移動到編譯完成的資料夾 "
 echo ${osStatus} "==============================================================${norm}"
 
-cd dist
+cd storybook-static
 
 echo
 echo ${osStatus} "${yellow}=============================================================="
